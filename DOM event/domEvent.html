@@ -73,26 +73,25 @@
         "published_at": "2023-08-19T15:06:00.000000Z"
         }
     ];
-    function PostItem(hello){
+    function PostItem({course, onClick}){
         return (
             <div className="course-item">
-                <h2 onClick = {()=>alert(hello.title)}>{hello.title}</h2>  
-                <img src={hello.image} alt={hello.title}/>  
-                <p>{hello.description}</p>
-                <p>{hello.studentsCount}</p>
+                <h2 onClick = {() => onClick(course)}>{course.title}</h2>  
+                <img src={course.image_url} alt={course.title}/>  
+                <p>{course.description}</p>
+                <p>{course.studentsCount}</p>
             </div>
         );
     }
     function App(){
+        function handleClick(course) {alert(course.title)}
         return (
             <div className="course-wrapper">
                 {courses.map((course) => (
                     <PostItem 
                         key = {course.id}
-                        title = {course.title}
-                        image = {course.image_url}
-                        description = {course.description}
-                        studentsCount = {course.students_count}
+                        course = {course}
+                        onClick = {handleClick}
                     />
                 ))}
             </div>
