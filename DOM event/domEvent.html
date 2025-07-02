@@ -76,7 +76,7 @@
     function PostItem(hello){
         return (
             <div className="course-item">
-                <h2>{hello.title}</h2>  
+                <h2 onClick = {()=>alert(hello.title)}>{hello.title}</h2>  
                 <img src={hello.image} alt={hello.title}/>  
                 <p>{hello.description}</p>
                 <p>{hello.studentsCount}</p>
