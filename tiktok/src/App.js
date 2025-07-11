@@ -1,15 +1,14 @@
-import {useState} from 'react'
-//increase counter and show it on the screen 
+import Random from './Random';
+import Counter from './Counter'
+
 function App() {
-  const [counter, setCounter] = useState(1);
-  const handleCounter = () => {
-    setCounter(counter+1);
-  };
   return (
-    <div>
-      <h1>{counter}</h1>
-      <button onClick={handleCounter}>Increase</button>
+    <div className="App">
+      <div><Random /></div>
+      <hr></hr>
+      <div><Counter /></div>
     </div>
+
   );
 }
 
