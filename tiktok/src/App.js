@@ -1,5 +1,6 @@
 import Random from './Random';
 import Counter from './Counter'
+import InputForm from './InputForm.js'
 
 function App() {
   return (
@@ -7,8 +8,9 @@ function App() {
       <div><Random /></div>
       <hr></hr>
       <div><Counter /></div>
+      <hr></hr>
+      <div><InputForm /></div>
     </div>
-
   );
 }
 
