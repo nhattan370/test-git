@@ -2,6 +2,8 @@ import Random from './Random';
 import Counter from './Counter';
 import InputForm from './InputForm.js';
 import RadioForm from './RadioForm.js';
+import CheckBoxForm from './CheckBoxForm.js';
+import CreateTodoList from './TodoList.js';
 
 function App() {
   return (
@@ -13,6 +15,10 @@ function App() {
       <div><InputForm /></div>
       <hr></hr>
       <div><RadioForm /></div>
+      <hr></hr>
+      <div><CheckBoxForm /></div>
+      <hr></hr>
+      <div><CreateTodoList/></div>
     </div>
   );
 }
