@@ -6,6 +6,7 @@ import RadioForm from './RadioForm.js';
 import CheckBoxForm from './CheckBoxForm.js';
 import CreateTodoList from './TodoList.js';
 import MountedAndUnmounted from './MountedAndUnmounted.js';
+import UseEffectExample from './UseEffectExample.js';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <div><CreateTodoList/></div>
       <hr></hr>
       <div><MountedAndUnmounted/></div>
+      <hr></hr>
+      <div><UseEffectExample/></div>
     </div>
   );
 }
