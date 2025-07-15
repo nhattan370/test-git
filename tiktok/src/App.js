@@ -7,6 +7,7 @@ import CheckBoxForm from './CheckBoxForm.js';
 import CreateTodoList from './TodoList.js';
 import MountedAndUnmounted from './MountedAndUnmounted.js';
 import UseEffectExample from './UseEffectExample.js';
+import UseEffectWithDependences from './UseEffectWithDependences.js';
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
       <div><MountedAndUnmounted/></div>
       <hr></hr>
       <div><UseEffectExample/></div>
+      <hr></hr>
+      <div><UseEffectWithDependences/></div>
     </div>
   );
 }
