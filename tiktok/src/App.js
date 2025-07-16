@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Random from './Random';
 import Counter from './Counter';
 import InputForm from './InputForm.js';
@@ -9,6 +8,7 @@ import MountedAndUnmounted from './MountedAndUnmounted.js';
 import UseEffectExample from './UseEffectExample.js';
 import UseEffectWithDependences from './UseEffectWithDependences.js';
 import ScrollScreen from './UseEffectWithDomEvent.js';
+import Countdown from './SetTimeWithUseEffect.js';
 
 function App() {
   return (
@@ -32,6 +32,8 @@ function App() {
       <div><UseEffectWithDependences/></div>
       <hr></hr>
       <div><ScrollScreen></ScrollScreen></div>
+      <hr></hr>
+      <div><Countdown></Countdown></div>
     </div>
   );
 }
