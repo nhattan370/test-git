@@ -9,6 +9,7 @@ import UseEffectExample from './UseEffectExample.js';
 import UseEffectWithDependences from './UseEffectWithDependences.js';
 import ScrollScreen from './UseEffectWithDomEvent.js';
 import Countdown from './SetTimeWithUseEffect.js';
+import PreviewAvatar from './PreviewAvatar.js';
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
       <div><ScrollScreen></ScrollScreen></div>
       <hr></hr>
       <div><Countdown></Countdown></div>
+      <hr></hr>
+      <div><PreviewAvatar></PreviewAvatar></div>
     </div>
   );
 }
