@@ -11,6 +11,7 @@ import ScrollScreen from './UseEffectWithDomEvent.js';
 import Countdown from './SetTimeWithUseEffect.js';
 import PreviewAvatar from './PreviewAvatar.js';
 import FakeChatApp from './FakeChatApp.js';
+import FakeAnotherApp from './FakeAnotherApp.js';
 
 function App() {
   return (
@@ -38,8 +39,10 @@ function App() {
       <div><Countdown></Countdown></div>
       <hr></hr>
       <div><PreviewAvatar></PreviewAvatar></div>
+      {/* <hr></hr>
+      <div><FakeChatApp></FakeChatApp></div> */}
       <hr></hr>
-      <div><FakeChatApp></FakeChatApp></div>
+      <div><FakeAnotherApp></FakeAnotherApp></div>
     </div>
   );
 }
