@@ -10,6 +10,7 @@ import UseEffectWithDependences from './UseEffectWithDependences.js';
 import ScrollScreen from './UseEffectWithDomEvent.js';
 import Countdown from './SetTimeWithUseEffect.js';
 import PreviewAvatar from './PreviewAvatar.js';
+import FakeChatApp from './FakeChatApp.js';
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
       <div><Countdown></Countdown></div>
       <hr></hr>
       <div><PreviewAvatar></PreviewAvatar></div>
+      <hr></hr>
+      <div><FakeChatApp></FakeChatApp></div>
     </div>
   );
 }
