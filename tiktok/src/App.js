@@ -14,6 +14,7 @@ import FakeChatApp from './FakeChatApp.js';
 import FakeAnotherApp from './FakeAnotherApp.js';
 import UseLayoutEffect  from './UseLayoutEffect.js';
 import CountdownUseRef from './UseRefCountDown.js';
+import CountdownUseRefSaveOldValue from './UseRefSaveOldValue.js'
 
 function App() {
   return (
@@ -49,6 +50,8 @@ function App() {
       <div><UseLayoutEffect></UseLayoutEffect></div>
       <hr></hr>
       <div><CountdownUseRef></CountdownUseRef></div>
+      <hr></hr>
+      <div><CountdownUseRefSaveOldValue></CountdownUseRefSaveOldValue></div>
     </div>
   );
 }
