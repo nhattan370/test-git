@@ -13,6 +13,7 @@ import PreviewAvatar from './PreviewAvatar.js';
 import FakeChatApp from './FakeChatApp.js';
 import FakeAnotherApp from './FakeAnotherApp.js';
 import UseLayoutEffect  from './UseLayoutEffect.js';
+import CountdownUseRef from './UseRefCountDown.js';
 
 function App() {
   return (
@@ -46,6 +47,8 @@ function App() {
       <div><FakeAnotherApp></FakeAnotherApp></div>
       <hr></hr>
       <div><UseLayoutEffect></UseLayoutEffect></div>
+      <hr></hr>
+      <div><CountdownUseRef></CountdownUseRef></div>
     </div>
   );
 }
