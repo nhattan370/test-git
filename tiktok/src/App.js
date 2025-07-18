@@ -15,6 +15,7 @@ import FakeAnotherApp from './FakeAnotherApp.js';
 import UseLayoutEffect  from './UseLayoutEffect.js';
 import CountdownUseRef from './UseRefCountDown.js';
 import CountdownUseRefSaveOldValue from './UseRefSaveOldValue.js'
+import UseRefGetElementDirectly from './UseRefGetElementDirectly'
 
 function App() {
   return (
@@ -51,7 +52,8 @@ function App() {
       <hr></hr>
       <div><CountdownUseRef></CountdownUseRef></div>
       <hr></hr>
-      <div><CountdownUseRefSaveOldValue></CountdownUseRefSaveOldValue></div>
+      <div><UseRefGetElementDirectly></UseRefGetElementDirectly></div>
+
     </div>
   );
 }
