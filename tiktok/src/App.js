@@ -18,6 +18,7 @@ import CountdownUseRefSaveOldValue from './UseRefSaveOldValue.js'
 import UseRefGetElementDirectly from './UseRefGetElementDirectly'
 import UseCallBack from './UseCallBack.js';
 import UseMemoToTakeValue from './UseMemoToTakeValue.js';
+import UpAndDown from './SimpleUseReducer.js';
 import { useCallback, useState } from 'react';
 
 function App() {
@@ -66,6 +67,8 @@ const handleIncrease = useCallback(()=>{setNumber(number + 1)},[])
       <h2>{number}</h2>
       <hr></hr>
       <UseMemoToTakeValue></UseMemoToTakeValue>
+      <hr></hr>
+      <UpAndDown></UpAndDown>
     </div>
   );
 }
