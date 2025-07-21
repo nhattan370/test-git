@@ -17,6 +17,7 @@ import CountdownUseRef from './UseRefCountDown.js';
 import CountdownUseRefSaveOldValue from './UseRefSaveOldValue.js'
 import UseRefGetElementDirectly from './UseRefGetElementDirectly'
 import UseCallBack from './UseCallBack.js';
+import UseMemoToTakeValue from './UseMemoToTakeValue.js';
 import { useCallback, useState } from 'react';
 
 function App() {
@@ -63,6 +64,8 @@ const handleIncrease = useCallback(()=>{setNumber(number + 1)},[])
       <h1>Use callback combine with memo to ensure not re-render when the reference types change</h1>
       <UseCallBack onIncrease = {handleIncrease}></UseCallBack>
       <h2>{number}</h2>
+      <hr></hr>
+      <UseMemoToTakeValue></UseMemoToTakeValue>
     </div>
   );
 }
