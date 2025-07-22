@@ -19,6 +19,7 @@ import UseRefGetElementDirectly from './UseRefGetElementDirectly'
 import UseCallBack from './UseCallBack.js';
 import UseMemoToTakeValue from './UseMemoToTakeValue.js';
 import UpAndDown from './SimpleUseReducer.js';
+import TodoApp from './UseReducerTodoApp.js';
 import { useCallback, useState } from 'react';
 
 function App() {
@@ -28,7 +29,7 @@ const handleIncrease = useCallback(()=>{setNumber(number + 1)},[])
 
   return (
     <div className="App">
-      <div><Random /></div>
+      {/* <div><Random /></div>
       <hr></hr>
       <div><Counter /></div>
       <hr></hr>
@@ -51,8 +52,8 @@ const handleIncrease = useCallback(()=>{setNumber(number + 1)},[])
       <div><Countdown></Countdown></div>
       <hr></hr>
       <div><PreviewAvatar></PreviewAvatar></div>
-      {/* <hr></hr>
-      <div><FakeChatApp></FakeChatApp></div> */}
+      <hr></hr>
+      <div><FakeChatApp></FakeChatApp></div>
       <hr></hr>
       <div><FakeAnotherApp></FakeAnotherApp></div>
       <hr></hr>
@@ -68,7 +69,9 @@ const handleIncrease = useCallback(()=>{setNumber(number + 1)},[])
       <hr></hr>
       <UseMemoToTakeValue></UseMemoToTakeValue>
       <hr></hr>
-      <UpAndDown></UpAndDown>
+      <UpAndDown></UpAndDown> */}
+      <hr></hr>
+      <TodoApp></TodoApp>
     </div>
   );
 }
